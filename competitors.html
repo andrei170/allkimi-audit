@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Competitor Check &middot; Allkimi Construction &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="./">Quick Audit</a><a href="competitors.html" class="on">Competitor Check</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Competitor Check &middot; Allkimi Construction</div>
+    <h1>Three Firms Competing For The Same Garden Grove Homeowner</h1>
+    <div class="sub">Prepared for Jeong Kim &middot; 2 October 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">First, Something We Noticed About Your Own Listing</div>
+    <div class="warn">
+      <div class="lab">Your address and your service area do not match</div>
+      <p>Your website gives an address in <b>Garden Grove, CA 92841</b> &mdash; Orange County. It then says you
+      serve <b>&ldquo;Los Angeles, CA, and the surrounding areas&rdquo;</b>, and the phone number on it is a
+      <b>213</b> number, which is central Los Angeles.</p>
+      <p>Garden Grove to Los Angeles is roughly <b>thirty-five miles</b>. Those are two different markets with
+      different homeowners, different competitors, and different ADU rules set by different city councils.</p>
+      <p>⚠️ <b>We are not saying this is wrong &mdash; plenty of contractors genuinely travel.</b> But it does mean
+      we could not tell which market you actually want to win, so we looked at the one you are physically sitting
+      in. <b>If the answer is really Los Angeles, tell us on the call and this page changes.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Three, And Why We Picked Them</div>
+    <p style="color:var(--mut);font-size:15px;max-width:76ch;margin-bottom:16px">Each one makes a different
+    argument. We chose them for that, not because they are the biggest.</p>
+
+    <div class="flag">
+      <div class="lab">1. Go ADU &mdash; goadu.com &middot; Burbank &middot; the specialist</div>
+      <p>Started in 2015 doing renovations and general construction. <b>In 2020 they dropped all of it and now
+      build nothing but ADUs.</b> Co-led by Gil Vaisman and Hugo Ruiz.</p>
+      <p>Their website runs to <b>270 pages</b>. Yours runs to six. They have a blog, a financing page, and a
+      measured website &mdash; Google Analytics, Tag Manager and a heatmap tool that records how visitors move
+      around the page.</p>
+      <p>⭐ <b>The argument they are making is focus.</b> A homeowner comparing a company that does only ADUs
+      against a company that does ADUs plus eight other things will assume the specialist is better at it, whether
+      or not that is true.</p>
+    </div>
+
+    <div class="flag" style="margin-top:16px">
+      <div class="lab">2. Avorino &mdash; avorino.com &middot; Orange County &middot; CSLB #1107538 &middot; the advertiser</div>
+      <p>Seven-plus years, design-build, publishes its licence number. <b>247 pages.</b> Blog, financing, free
+      estimates, reviews.</p>
+      <p>🔴 <b>They carry a Google Ads conversion tag.</b> That is not a general analytics tool &mdash; it exists
+      for one purpose, which is to measure which advert produced which enquiry. <b>It means Avorino is spending
+      money on advertising right now and tracking what comes back from it.</b></p>
+      <p>And they have a page at <b>avorino.com/garden-grove-adu</b> titled <i>&ldquo;Garden Grove ADU Regulations
+      &amp; Builders&rdquo;</i>. It is <b>4,097 words</b> long and says &ldquo;Garden Grove&rdquo;
+      <b>ninety-three times</b>.</p>
+      <p>⭐ <b>Note what it is about: the rules, not the sales pitch.</b> It is written for a homeowner who is
+      still working out whether an ADU is even allowed on their lot &mdash; months before they are ready to hire
+      anyone. By the time that person wants quotes, Avorino has already been helpful once.</p>
+    </div>
+
+    <div class="flag" style="margin-top:16px">
+      <div class="lab">3. Horizon Remodeling &mdash; horizonremodelinginc.com &middot; CSLB #938230 &middot; the one your size</div>
+      <p>Fifteen-plus years, publishes its licence number, serves Garden Grove. <b>Their whole site is seven
+      pages &mdash; almost exactly the size of yours.</b></p>
+      <p>🔴 <b>And it carries Google Analytics, Google Tag Manager and a Meta pixel.</b> A seven-page site, fully
+      instrumented.</p>
+      <p>They have a page at <b>horizonremodelinginc.com/adu-contractor-in-garden-grove/</b>, headed
+      <i>&ldquo;#1 ADU Contractor in Garden Grove&rdquo;</i>. It is <b>3,537 words</b> on that one page.</p>
+      <p>⭐ <b>This is the one that matters most, and here is why.</b> Horizon is not a big company with a big
+      marketing department. They are roughly your size. <b>So &ldquo;I am too small for this&rdquo; is not what is
+      separating you from them.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Side By Side, Measured The Same Way</div>
+    <table class="cmp">
+      <tr><th>&nbsp;</th><th class="you">Allkimi</th><th>Go ADU</th><th>Avorino</th><th>Horizon</th></tr>
+      <tr><td>Pages on the website</td><td class="o"><b>6</b></td><td>270</td><td>247</td><td>7</td></tr>
+      <tr><td>Words on the homepage</td><td class="o"><b>1,459</b></td><td>3,596</td><td>2,165</td><td>2,799</td></tr>
+      <tr><td>Trades offered</td><td class="o"><b>9</b></td><td>1</td><td>design-build</td><td>remodel + ADU</td></tr>
+      <tr class="you"><td><b>Any analytics at all</b></td><td class="o"><b>&#10060; none</b></td><td>&#9989; GA4 + GTM + heatmap</td><td>&#9989; GA4</td><td>&#9989; GA4 + GTM</td></tr>
+      <tr><td>Google Ads tag &mdash; actively advertising</td><td class="o">&#10060;</td><td>&#10060;</td><td><b>&#9989;</b></td><td>&#10060;</td></tr>
+      <tr><td>Meta pixel</td><td class="o">&#10060;</td><td>&#10060;</td><td>&#10060;</td><td><b>&#9989;</b></td></tr>
+      <tr><td>Blog or guides</td><td class="o">&#10060;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td></tr>
+      <tr><td>Offers customer financing</td><td class="o">&#9989;</td><td>&#9989;</td><td>&#9989;</td><td>&#9989;</td></tr>
+      <tr><td>Licence number on the site</td><td class="o">&#9989;</td><td>not on homepage</td><td>&#9989;</td><td>&#9989;</td></tr>
+      <tr><td>A page written about Garden Grove</td><td class="o">&#10060;</td><td>&#10060;</td><td><b>4,097 words</b></td><td><b>3,537 words</b></td></tr>
+    </table>
+    <div class="oppnote">
+      <b>Read the fourth row across.</b> ⭐ <b>You are the only one of the four that cannot see its own website
+      traffic.</b> Three competitors of three different sizes all installed measurement. It is not a
+      big-company thing &mdash; Horizon did it on seven pages.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Two Findings That Should Actually Bother You</div>
+
+    <div class="warn">
+      <div class="lab">🔴 1. Two companies have a single page about Garden Grove bigger than your entire website</div>
+      <p>Avorino's Garden Grove page is <b>4,097 words</b>. Horizon's is <b>3,537 words</b>. <b>Your whole site,
+      every page, all nine trades, is 1,459 words.</b></p>
+      <p>So a Garden Grove homeowner typing &ldquo;ADU Garden Grove&rdquo; into Google finds a Burbank company
+      and an Orange County company who have each written thousands of words about <b>their own town</b> &mdash;
+      and the contractor who actually lives there has written almost nothing.</p>
+      <p>⭐ <b>You have the one thing neither of them can buy, which is actually being local.</b> It is simply not
+      written down anywhere.</p>
+    </div>
+
+    <div class="warn" style="margin-top:16px">
+      <div class="lab">🔴 2. Your financing is not the advantage we thought it was</div>
+      <p>On the audit page we flagged customer financing as the strongest signal on your site. <b>We were half
+      wrong, and you should hear the correction from us rather than find it out later.</b></p>
+      <p><b>All three of these competitors offer financing too.</b> So it is not a differentiator in this market
+      &mdash; it is the entry fee.</p>
+      <p>⭐ <b>It still tells us your job values are high, which was the useful part.</b> But it will not win you
+      a job against any of these three, because they can all say the same sentence.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Are Deliberately Not Claiming</div>
+    <div class="flag">
+      <div class="lab">⛔ Because the honest limits matter more than the findings</div>
+      <ul>
+        <li><b>We do not know what any of these three earn</b>, how many jobs they complete, or whether they are
+        profitable. Page counts and tracking tags are not revenue.</li>
+        <li><b>A bigger website is not proof of a better business.</b> It is proof of investment in being found.
+        Those are different things and the second does not guarantee the first.</li>
+        <li><b>We have not verified anyone's licence status</b>, including yours. We read numbers off websites.</li>
+        <li><b>We did not assess their build quality, their reviews in detail, or their pricing.</b> You will know
+        more about all three than we do.</li>
+        <li>⚠️ <b>A fourth firm appeared in search results with a Garden Grove page that did not load when we
+        checked it</b>, so we left it out rather than describe a page we could not read.</li>
+        <li><b>Years in business, licence numbers and locations are quoted from each company's own website</b> and
+        from public directory listings. We have not independently confirmed them.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">So What Does This Change?</div>
+    <ul class="road road2">
+      <li><b>1. Pick a market.</b> Garden Grove or Los Angeles. You cannot out-write both, and right now the site points at one while sitting in the other.</li>
+      <li><b>2. Pick the trade you want more of.</b> Go ADU dropped eight services to win one. You do not have to go that far, but nine equal trades is nine half-arguments.</li>
+      <li><b>3. Get measurement on before anything else.</b> ⭐ Every competitor can see what their website does. Until you can, any money you spend is unmeasurable &mdash; including money you would spend with us.</li>
+      <li><b>4. Write the page your competitors wrote about your own town.</b> They are describing Garden Grove from thirty miles away. You are in it.</li>
+      <li><b>5. Stop leading with financing.</b> Keep it, but it is table stakes here, not a differentiator.</li>
+    </ul>
+    <div class="oppnote" style="margin-top:14px">
+      <b>Three is the cheapest and the first.</b> ⭐ You asked for one more job a month. None of the rest of this
+      can be judged until something is counting.
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>A Burbank company and an Orange County company have each written more about Garden Grove than you have.</h2>
+    <p>You are the one who lives there.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 2 October 2026, for discussion with Jeong Kim at
+    Allkimi Construction. <b>This is a discussion document, not a proposal or a statement of work, and nothing on
+    it is priced.</b>
+    <b>&#9888; All page counts, word counts, tracking tags, financing mentions, blog presence and licence numbers
+    were measured by automated read of each company's public website on 2 October 2026 and describe those sites as
+    they stood on that date. Page counts are taken from each site's published sitemap. Word counts are of the
+    homepage unless a specific page is named.</b>
+    <b>&#9888; Allkimi's Garden Grove address, its stated Los Angeles service area and its 213 telephone number
+    were read from allkimi.com on that date. AG1 makes no finding about which market Allkimi operates in.</b>
+    <b>&#9888; Company histories, years in business, named individuals, locations and licence numbers are quoted
+    from each company's own website or from public directory listings and have NOT been independently verified.
+    AG1 has verified the licence status of NO party named on this page, including Allkimi.</b>
+    <b>&#9888; AG1 makes NO claim about the revenue, job volume, profitability, build quality, pricing, review
+    standing or advertising spend of any company named here. The presence of a Google Ads tag indicates that
+    measurement infrastructure for advertising exists on the site; it is NOT a measurement of spend and AG1 does
+    not know what, if anything, is being spent.</b>
+    <b>&#9888; The selection of these three firms is AG1's editorial judgement, made to illustrate three different
+    competitive arguments. It is NOT a ranking, NOT exhaustive, and NOT a statement that these are Allkimi's most
+    significant competitors. A fourth firm's city page returned an error when checked and was excluded.</b>
+    <b>&#9888; No enquiry volume, ranking position, traffic figure, close rate, number of jobs or revenue outcome
+    is forecast, promised or implied anywhere on this page.</b>
+  </div>
+</footer>
+</body></html>
