@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Quick Audit &middot; Allkimi Construction &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="./" class="on">Quick Audit</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Quick Audit &middot; Allkimi Construction</div>
+    <h1>One Job A Month, And Nothing Measuring Why</h1>
+    <div class="sub">Prepared for Jeong Kim &middot; 2 October 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">What You Told Our Team</div>
+    <div class="warn">
+      <div class="lab">The brief, in your words</div>
+      <ul>
+        <li><b>You currently do about one job a month.</b></li>
+        <li><b>You would like to get to two.</b></li>
+        <li>You are open to trying something on a trial basis.</li>
+      </ul>
+      <p>⭐ <b>That is a much smaller ask than most people bring us, and it is the reason this is worth a
+      conversation.</b> You are not asking to triple. You are asking for roughly <b>twelve more jobs across a
+      year</b> &mdash; one a month. That is a different kind of problem from &ldquo;double my volume&rdquo;, and
+      it is a more solvable one.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The One Number That Decides Everything</div>
+    <p style="color:var(--mut);font-size:15px;max-width:76ch;margin-bottom:16px">We have deliberately not guessed
+    this. Your site lists nine different trades, and the answer is completely different depending on which ones
+    actually pay your bills.</p>
+    <table class="cmp">
+      <tr><th>If a typical job is worth&hellip;</th><th>1 a month</th><th>2 a month</th><th>The extra</th></tr>
+      <tr><td>Gutters, attic insulation, a small repair</td><td>&mdash;</td><td>&mdash;</td><td class="o">smallest</td></tr>
+      <tr><td>Windows, textured coating, a roof</td><td>&mdash;</td><td>&mdash;</td><td class="o">middle</td></tr>
+      <tr class="you"><td><b>A kitchen, a bathroom, or an ADU</b></td><td>&mdash;</td><td>&mdash;</td><td class="o"><b>largest</b></td></tr>
+    </table>
+    <div class="oppnote">
+      <b>So the first question on the call is simply: what is a typical job worth to you?</b> ⭐ The reason it
+      matters is that <b>one extra job a month is either a rounding error or a transformation</b>, and which one
+      it is decides whether we should be working together at all. If the honest answer is that your jobs are
+      small repairs, we will say so rather than sell you something that cannot pay for itself.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Found On Your Site</div>
+    <div class="win">
+      <div class="lab">⭐ Genuinely good signs</div>
+      <ul>
+        <li><b>You publish your CSLB licence number on the site.</b> Most contractors bury it or leave it off.
+        It is a real trust signal and it belongs where it is.</li>
+        <li><b>You offer customer financing.</b> ⭐ <b>This is the single most interesting thing on your
+        website.</b> Nobody sets up financing for gutter cleaning. It says you are selling work big enough that
+        a homeowner has to think about how to pay for it &mdash; and that you have already solved the biggest
+        objection on a high-ticket job.</li>
+        <li><b>You list ADUs.</b> In Los Angeles that is one of the highest-value residential jobs available,
+        and demand for them is not going away.</li>
+        <li>The site loads, it is readable, and there is a phone number and a form on it.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Problems, Hardest First</div>
+
+    <div class="flag">
+      <div class="lab">🔴 1. There is no tracking on your website at all</div>
+      <p>We checked for every normal measurement tool. <b>There is no Google Analytics, no Tag Manager, no Google
+      Ads tag, and no Meta pixel.</b> Nothing.</p>
+      <p>What that means in practice: <b>you do not know how many people visit your site, where they came from,
+      which pages they read, or how many of them called you.</b> If one of your nine services brings in every
+      enquiry and the other eight bring in none, there is currently no way for you to know that.</p>
+      <p>⚠️ <b>And it means nobody has ever advertised for you.</b> An ads tag is the first thing any agency or
+      freelancer installs. Its absence tells us this ground is completely untouched &mdash; which is good news in
+      that the easy wins are all still sitting there, and bad news in that we would be starting with no history
+      to learn from.</p>
+    </div>
+
+    <div class="flag" style="margin-top:16px">
+      <div class="lab">🔴 2. You own a domain but take enquiries at a Gmail address</div>
+      <p>Your site publishes a <b>@gmail.com</b> address, even though you own <b>allkimi.com</b>. A homeowner
+      deciding whether to let you build a $200,000 ADU in their back garden reads that as a smaller, less
+      established operation than you are.</p>
+      <p>⭐ <b>This is a thirty-minute fix and it costs almost nothing.</b> It is the cheapest credibility you
+      will ever buy.</p>
+    </div>
+
+    <div class="flag" style="margin-top:16px">
+      <div class="lab">⚠️ 3. Nine trades on one website is nine half-arguments</div>
+      <p>Roofing, textured coating, windows, landscaping, gutters, attic insulation, ADUs, kitchens and bathrooms.
+      Every one of those is a different buyer with a different budget and a different reason to call.</p>
+      <p>A homeowner researching an ADU wants to see <b>ADUs you have built</b>, what they cost, how long they
+      take, and how you handle permits. On a site that treats ADUs as one of nine equal options, they cannot tell
+      whether you build one a year or one a week.</p>
+      <p><b>The fix is not to drop the other eight.</b> It is to decide which one you actually want more of, and
+      give that one the depth the others do not need.</p>
+    </div>
+
+    <div class="flag" style="margin-top:16px">
+      <div class="lab">⚠️ 4. The site is thin, and thin sites do not get found</div>
+      <p>The whole homepage is roughly fifteen hundred words covering nine trades. There is not enough on any
+      single service for Google to understand what you are best at, and not enough for a homeowner to feel
+      confident before they phone you.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Could Not Verify, And Are Not Going To Claim</div>
+    <div class="warn">
+      <div class="lab">Said plainly, because guessing is worse than asking</div>
+      <ul>
+        <li><b>Your licence status.</b> The number is published on your site. We could not retrieve a readable
+        record from the state board to confirm whether it is currently active, what classifications it carries,
+        or whether you hold workers' compensation or an exemption. <b>Not a concern &mdash; simply something we
+        could not read, and something you can tell us in one sentence.</b></li>
+        <li><b>&ldquo;Over ten years of experience.&rdquo;</b> That is what your site says. We have not
+        independently confirmed it and we are not treating it as a finding either way.</li>
+        <li><b>Whether you have employees, subcontractors, or neither.</b> This changes what &ldquo;two jobs a
+        month&rdquo; would actually require of you, so it matters more than it sounds.</li>
+        <li><b>How you get work today.</b> Referrals, repeat clients, a directory, word of mouth? Nothing on the
+        site tells us, and it is the thing we most need to know.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Why This Is Not Simply &ldquo;Buy More Leads&rdquo;</div>
+    <div class="warn">
+      <div class="lab">The honest version</div>
+      <p>If you are doing one job a month, <b>the bottleneck might not be enquiries at all.</b> There are three
+      genuinely different possibilities and they need three different answers:</p>
+      <ul>
+        <li><b>A. Almost nobody is contacting you.</b> Then the work is getting in front of people &mdash; and
+        with zero tracking in place, that starts with being able to measure it.</li>
+        <li><b>B. People contact you and do not buy.</b> Then more enquiries make your week worse, not better.
+        The work is in what happens after the phone rings.</li>
+        <li><b>C. You are turning work down, or cannot physically run two jobs at once.</b> Then this is a
+        capacity conversation and marketing would actively hurt you.</li>
+      </ul>
+      <p>⛔ <b>We cannot tell which of the three it is from the outside, and we are not going to pretend
+      otherwise.</b> That is what the call is for. ⭐ But note that <b>B and C are both cheaper to fix than
+      A</b> &mdash; so there is a real chance the answer costs you less than you are expecting.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Want To Know On The Call</div>
+    <ul class="road road2">
+      <li><b>1. What is a typical job worth?</b> The single most important number, and the first one we will ask for.</li>
+      <li><b>2. Which of the nine services do you actually want more of?</b> And which would you happily never do again?</li>
+      <li><b>3. Where does the work come from now?</b> Referrals, repeats, directories, walk-ins?</li>
+      <li><b>4. Roughly how many people enquire in a month, and how many become jobs?</b> Even a rough figure changes the plan completely.</li>
+      <li><b>5. Could you handle two at once?</b> Who does the work &mdash; you, employees, or subcontractors?</li>
+      <li><b>6. Have you ever run ads?</b> Your site says no. If you have, we would want to know what happened.</li>
+    </ul>
+    <div class="oppnote" style="margin-top:14px">
+      <b>Six questions, and the first one does most of the work.</b> We would rather spend your time on those than
+      on telling you things about your own business that you already know.
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>You want one more job a month. That is a findable number.</h2>
+    <p>But right now there is nothing in place that could tell you whether you found it.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 2 October 2026, for discussion with Jeong Kim at
+    Allkimi Construction. <b>This is a discussion document, not a proposal or a statement of work, and nothing on
+    it is priced.</b>
+    <b>&#9888; The findings about tracking, the published email address, the services listed, the page length and
+    the financing offer were taken from a read of allkimi.com on 2 October 2026 and describe that site as it stood
+    on that date.</b>
+    <b>&#9888; The statements that Allkimi currently completes about one job per month, would like to reach two,
+    and is open to a trial period are as recorded by AG1's team from a booking call and have not been independently
+    verified.</b>
+    <b>&#9888; AG1 has NOT verified the status, classifications, bonding or workers' compensation position of CSLB
+    licence 1140213, and makes no statement about it. The claim of over ten years of experience is quoted from the
+    company's own website and is not verified.</b>
+    <b>&#9888; The job-value table is deliberately blank. AG1 does not know Allkimi's average job value and will
+    not estimate it. The grouping of services into size bands is a prompt for discussion, not a valuation.</b>
+    <b>&#9888; No enquiry volume, close rate, cost per lead, number of jobs or revenue outcome is forecast,
+    promised or implied anywhere on this page. Whether AG1 can help depends on information AG1 does not yet
+    have.</b>
+  </div>
+</footer>
+</body></html>
